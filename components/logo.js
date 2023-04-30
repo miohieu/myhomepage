@@ -9,11 +9,12 @@ const LogoBox = styled.span`
   font-size: 18px;
   display: inline-flex;
   height: 30px;
+  transition: all 0.5s;
   line-height: 20px;
   padding: 10px;
 
-  &:hover img {
-    transform: rotate(20deg);
+  &:hover  {
+    transform: rotate(10deg);
   }
 `
 const Logo = () => {
@@ -35,3 +36,4 @@ const Logo = () => {
 }
 
 export default Logo
+
