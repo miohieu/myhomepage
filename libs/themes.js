@@ -34,7 +34,7 @@ const fonts = {
   heading: "'M PLUS Rounded 1c'"
 }
 const colors = {
-  glassTeal: '#88cca'
+  glassTeal: '#88ccca'
 }
 const config = {
   initialColorMode: 'dark',

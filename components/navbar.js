@@ -17,7 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import { forwardRef } from 'react'
-
+import ThemeToggleButton from './layout/themetoggle.js'
 const LinkItem = ({ href, path, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
@@ -38,10 +38,7 @@ const LinkItem = ({ href, path, children, ...props }) => {
 
 const MenuLink = forwardRef((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
-)
-)
-
-
+))
 
 const Navbar = props => {
   const { path } = props
@@ -111,9 +108,17 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                  <MenuItem as={MenuLink} href="/">About</MenuItem>
-                  <MenuItem as={MenuLink}  href="/works"> Works</MenuItem>
-                  <MenuItem as={MenuLink} href="/posts"> Posts</MenuItem>
+                <MenuItem as={MenuLink} href="/">
+                  About
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/works">
+                  {' '}
+                  Works
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/posts">
+                  {' '}
+                  Posts
+                </MenuItem>
                 <MenuItem
                   as={MenuLink}
                   href="https://github.com/miohieu/myhomepage"
