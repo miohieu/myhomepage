@@ -1,4 +1,4 @@
-import Logo from './logo'
+import Logo from './logo.js'
 import NextLink from 'next/link'
 import {
   Container,
@@ -63,7 +63,7 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="start" mr={5}>
+        <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}></Heading>
           <Logo />
         </Flex>
@@ -71,7 +71,7 @@ const Navbar = props => {
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
-          alighItems="center"
+          alignItems="center"
           flexGrow={2}
           mt={{ base: 5, md: 0 }}
         >

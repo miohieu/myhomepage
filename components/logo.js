@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import FootprintIcon from './logo/footprint'
+import MainLogo from './logo/66'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
@@ -11,17 +11,17 @@ const LogoBox = styled.span`
   height: 30px;
   transition: all 0.5s;
   line-height: 20px;
-  padding: 10px;
+  padding: 20px;
 
-  &:hover  {
-    transform: rotate(10deg);
+  &:hover svg  {
+    transform: rotate(90deg);
   }
 `
 const Logo = () => {
   return (
       <Link href="/">
         <LogoBox>
-          <FootprintIcon />
+          <MainLogo />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"
