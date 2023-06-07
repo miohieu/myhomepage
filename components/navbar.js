@@ -14,6 +14,7 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
+
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import { forwardRef } from 'react'
@@ -93,6 +94,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+          <ThemeToggleButton />
           <Box
             ml={3}
             display={{
