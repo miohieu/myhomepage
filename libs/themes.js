@@ -37,9 +37,9 @@ const colors = {
   glassTeal: '#88ccca'
 }
 const config = {
-  initialColorMode: 'dark',
+  initialColorMode: 'light',
   useSystemColorMode: true
 }
 const theme = extendTheme({ config, fonts, styles, components, colors })
 
-export default theme 
+export default theme

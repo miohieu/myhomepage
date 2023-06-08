@@ -18,17 +18,17 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import { forwardRef } from 'react'
-import ThemeToggleButton from './layout/themetoggle.js'
+import ThemeToggleButton from './layout/theme-toggle-button.js'
 const LinkItem = ({ href, path, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
   return (
     <Link
       as={NextLink}
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'glassTeal' : undefined}
+      bg={active ? 'grassTeal' : undefined}
       color={active ? '#202034' : inactiveColor}
       {...props}
     >
@@ -49,7 +49,7 @@ const Navbar = props => {
       as="nav"
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
+      style={{ backdropFilter: 'blur(10px)' }}
       z-index={2}
       {...props}
     >
@@ -93,8 +93,8 @@ const Navbar = props => {
             Source
           </LinkItem>
         </Stack>
+        <ThemeToggleButton />
         <Box flex={1} align="right">
-          <ThemeToggleButton />
           <Box
             ml={3}
             display={{
