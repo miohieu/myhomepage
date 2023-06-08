@@ -93,7 +93,7 @@ const Navbar = props => {
             Source
           </LinkItem>
         </Stack>
-        <ThemeToggleButton />
+      <ThemeToggleButton/>
         <Box flex={1} align="right">
           <Box
             ml={3}
