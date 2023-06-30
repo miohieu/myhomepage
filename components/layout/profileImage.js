@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import profile from '../../public/profile.JPG'
+import profile from '../../public/profile.jpg'
 
 const imageStyle = {
   borderRadius: '100%',
