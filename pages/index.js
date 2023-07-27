@@ -6,9 +6,9 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import Image from '../components/layout/profileImage'
-import Section from '../components/layout/section'
-import Paragraph from '../components/layout/paragraph'
+import Image from '../components/profileImage'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const Page = () => (

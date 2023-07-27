@@ -18,7 +18,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import { forwardRef } from 'react'
-import ThemeToggleButton from './layout/theme-toggle-button.js'
+import ThemeToggleButton from './theme-toggle-button.js'
 const LinkItem = ({ href, path, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
@@ -29,7 +29,7 @@ const LinkItem = ({ href, path, children, ...props }) => {
       scroll={false}
       p={2}
       bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202034' : inactiveColor}
+      color={active ? '#E5BEEC' : inactiveColor}
       {...props}
     >
       {children}
