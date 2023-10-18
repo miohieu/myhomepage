@@ -26,8 +26,8 @@ const Works = () => {
         </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-        <WorkGridItem id="movie" title="Movie Rental" thumbnail={movie}>
-        Fake Movie rental app across famous platform (NextJS, tailwind, typescript)
+        <WorkGridItem id="movie" title="Movie booking" thumbnail={movie}>
+         Movie booking app with login, register, update account services (NextJS, tailwind, typescript, Axios)
         </WorkGridItem>
         </Section>
         </SimpleGrid>
